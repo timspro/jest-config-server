@@ -1,0 +1,52 @@
+{
+  "name": "@tim-code/jest-config-server",
+  "version": "0.0.2",
+  "description": "",
+  "main": "./jest.config.cjs",
+  "exports": {
+    "import": "./jest.config.js",
+    "require": "./jest.config.cjs"
+  },
+  "type": "module",
+  "scripts": {
+    "prepublishOnly": "babel src --out-dir lib --out-file-extension .cjs"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@tim-code/eslint-config": "^0.2.2"
+  },
+  "dependencies": {
+    "@tim-code/project-dir": "^0.0.2",
+    "@tim-code/server": "^0.2.0",
+    "browser-env": "^3.3.0",
+    "node-fetch": "^3.0.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": 12
+          }
+        }
+      ]
+    ]
+  },
+  "eslintConfig": {
+    "extends": "@tim-code",
+    "root": true,
+    "env": {
+      "node": true,
+      "jest": true
+    },
+    "ignorePatterns": "lib"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
