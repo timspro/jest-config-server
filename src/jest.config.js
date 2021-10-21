@@ -5,7 +5,7 @@ const projectDir = dirname(fileURLToPath(import.meta.url))
 
 export default {
   transform: {},
-  globalSetup: `${projectDir}/lib/jest.global-setup.cjs`,
-  globalTeardown: `${projectDir}/lib/jest.global-teardown.cjs`,
-  setupFilesAfterEnv: [`${projectDir}/lib/jest.setup.cjs`],
+  globalSetup: `${projectDir}/lib/jest.global-setup.js`,
+  globalTeardown: `${projectDir}/lib/jest.global-teardown.js`,
+  setupFilesAfterEnv: [`${projectDir}/lib/jest.setup.js`],
 }
