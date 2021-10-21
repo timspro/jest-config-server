@@ -3,7 +3,7 @@ import { fileURLToPath } from "url"
 
 const projectDir = dirname(fileURLToPath(import.meta.url))
 
-module.exports = {
+export default {
   transform: {},
   globalSetup: `${projectDir}/lib/jest.global-setup.cjs`,
   globalTeardown: `${projectDir}/lib/jest.global-teardown.cjs`,
