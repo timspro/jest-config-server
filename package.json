@@ -1,13 +1,17 @@
 {
   "name": "@tim-code/jest-config-server",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "",
   "main": "./src/jest.config.js",
   "type": "module",
   "author": "",
   "license": "UNLICENSED",
+  "scripts": {
+    "test": "node --no-warnings --experimental-vm-modules node_modules/.bin/jest --config=src/jest.config.js"
+  },
   "devDependencies": {
-    "@tim-code/eslint-config": "^0.2.2"
+    "@tim-code/eslint-config": "^0.2.2",
+    "jest": "^27.3.1"
   },
   "dependencies": {
     "@tim-code/server": "^0.2.3",
