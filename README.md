@@ -4,8 +4,8 @@
 
 ROUTES_DIR: the directory to provide to the server during global setup
 
-Additionally,
+Additionally:
 
-HOSTNAME and PROTOCOL will be passed as the URL for the browser environment, but these aren't really necessary.
+PROTOCOL and HOSTNAME will be passed as the URL for the browser environment, but these aren't really necessary. These will default to `http` and `localhost` respectively.
 
-PORT is set after the server has been started to a random available port.
+`process.env.PORT` is set after the server has been started to a random available port.

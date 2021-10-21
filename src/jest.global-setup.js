@@ -1,9 +1,7 @@
 import { server } from "@tim-code/server"
 
-export default () => {
-  process.env.HOSTNAME = "localhost"
-  process.env.PROTOCOL = "http"
-  return new Promise((resolve) => {
+export default () =>
+  new Promise((resolve) => {
     global.server = server({
       dir: process.env.ROUTES_DIR,
       port: 0,
@@ -13,4 +11,3 @@ export default () => {
       },
     })
   })
-}

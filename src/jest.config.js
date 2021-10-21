@@ -1,4 +1,7 @@
-const { projectDir } = require("@tim-code/project-dir")
+import { dirname } from "path"
+import { fileURLToPath } from "url"
+
+const projectDir = dirname(fileURLToPath(import.meta.url))
 
 module.exports = {
   transform: {},
