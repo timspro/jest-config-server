@@ -5,7 +5,7 @@ export default () => {
   process.env.PROTOCOL = "http"
   return new Promise((resolve) => {
     global.server = server({
-      dir: process.env.CODE_DIR,
+      dir: process.env.ROUTES_DIR,
       port: 0,
       done: () => {
         process.env.PORT = global.server.address().port
