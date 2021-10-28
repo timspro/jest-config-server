@@ -1,6 +1,6 @@
 {
   "name": "@tim-code/jest-config-server",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "./src/jest.config.js",
   "type": "module",
