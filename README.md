@@ -15,10 +15,20 @@ export default {
 }
 ```
 
+Example `test` command in `package.json`:
+
+```json
+"test": "ROUTES_DIR=backend node --no-warnings --experimental-vm-modules node_modules/.bin/jest",
+```
+
 ## Environment Variables
 
-ROUTES_DIR: the directory to provide to the server during global setup
+`PORT`: the port to use for the test server; Node randomly assigns an available one by default
+
+By using a random port, multiple test suites can run in parallel and there is no worry about asking for a port that is already in use.
+
+`ROUTES_DIR`: the directory to provide to the server during global setup
 
 Additionally:
 
-`process.env.PORT` is set after the server has been started to a random available port.
+`process.env.PORT` is set after the server has been started to the port used to start the server.

@@ -1,6 +1,6 @@
 {
   "name": "@tim-code/jest-config-server",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "main": "./src/jest.config.js",
   "type": "module",
@@ -10,7 +10,7 @@
     "test": "node --no-warnings --experimental-vm-modules node_modules/.bin/jest --config=src/jest.config.js"
   },
   "devDependencies": {
-    "@tim-code/eslint-config": "^0.5.5",
+    "@tim-code/eslint-config": "^0.5.6",
     "jest": "^27.3.1"
   },
   "dependencies": {

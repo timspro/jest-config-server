@@ -4,7 +4,7 @@ export default () =>
   new Promise((resolve) => {
     global.server = server({
       routes: process.env.ROUTES_DIR,
-      port: 0,
+      port: process.env.PORT || 0,
       done: () => {
         process.env.PORT = global.server.address().port
         resolve()
