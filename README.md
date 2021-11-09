@@ -23,7 +23,7 @@ Example `test` command in `package.json`:
 
 ## Environment Variables
 
-`PORT`: the port to use for the test server; Node randomly assigns an available one by default
+`PORT`: the port to use for the test server; Node randomly assigns an available one by default or if PORT is 0
 
 By using a random port, multiple test suites can run in parallel and there is no worry about asking for a port that is already in use.
 
