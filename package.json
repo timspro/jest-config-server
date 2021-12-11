@@ -10,13 +10,13 @@
     "test": "node --no-warnings --experimental-vm-modules node_modules/.bin/jest --config=src/jest.config.js"
   },
   "devDependencies": {
-    "@tim-code/eslint-config": "^0.5.6",
-    "jest": "^27.3.1"
+    "@tim-code/eslint-config": "^0.5.10",
+    "jest": "^27.4.0"
   },
   "dependencies": {
-    "@tim-code/server": "^0.4.12",
+    "@tim-code/server": "^0.6.0",
     "browser-env": "^3.3.0",
-    "node-fetch": "^3.0.0"
+    "node-fetch": "^3.1.0"
   },
   "eslintConfig": {
     "extends": "@tim-code",
