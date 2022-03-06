@@ -4,6 +4,10 @@
 npm install @tim-code/jest-config-server
 ```
 
+A companion library to `server`, this allows the server to be run as part of Jest tests.
+
+## Usage
+
 Usage in including project:
 
 ```js
