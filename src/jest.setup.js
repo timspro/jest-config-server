@@ -5,6 +5,5 @@ import fetch from "node-fetch"
 // const hostname = process.env.HOSTNAME || "localhost"
 // const port = process.env.PORT
 
-// unclear what url is used for but appears to need to be set to something
-browser({ url: `http://localhost` })
+browser({ url: `http://localhost:${process.env.PORT}` })
 global.fetch = fetch
